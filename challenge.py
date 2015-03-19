@@ -82,13 +82,9 @@ def visitPage(url):
 
 visitPage("http://"+domain)
 
-
-count = 0
-while (len(stack) > 0 and count < 300):
-	count = count+1
+while (len(stack) > 0):
 	actualUrl = stack.pop()
 	print("Analyze: "+actualUrl)
 	if not urlWasVisited(actualUrl) :
-		visitPage(actualUrl)
-	
+		visitPage(actualUrl)	
    
