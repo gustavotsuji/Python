@@ -70,7 +70,7 @@ def visitPage(url):
 		if urlStartsWithSlash(newUrl) and not urlWasVisited("http://"+domain+newUrl):
 			addUrl("http://"+domain+newUrl)
 		elif (urlWasVisited(newUrl) or not urlInDomain(newUrl)) :
-			a=1
+			pass
 		else :
 			addUrl(newUrl)
 	
